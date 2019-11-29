@@ -19,3 +19,5 @@ git push origin maste
 地址:git@10.69.94.140:/home/git/repository/gdcs/qtsb_wenzhou.git
 password:P@ssword4ioee 
 
+强制提交到远程仓库(不推荐)
+ git push -u origin master -f
