@@ -1,0 +1,21 @@
+
+1. 在远程仓库中创建仓库
+git init --bare qtsb_ningbo.git
+
+2. 进入本地项目，将当前项目转换成git项
+cd "C:\git\gdcs_v3" git init
+
+3. 为当前项目添加远程仓库地址
+git remote add origin git@10.69.94.140:/home/git/repository/gdcs/gdcs_v3.git 
+git remote -v --查看远程仓库 
+git push --set-upstream origin master  -- 设置默认的分支和远程仓库
+
+4.添加当前项目代码，并提交到远程仓库
+git status 
+git add * 
+git commit -m "init version" 
+git push origin maste
+
+地址:git@10.69.94.140:/home/git/repository/gdcs/qtsb_wenzhou.git
+password:P@ssword4ioee 
+
