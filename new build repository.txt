@@ -1,23 +1,29 @@
 
-1. ÔÚÔ¶³Ì²Ö¿âÖĞ´´½¨²Ö¿â
-git init --bare qtsb_ningbo.git
+1. åœ¨è¿œç¨‹ä»“åº“ä¸­åˆ›å»ºä»“åº“
+git init --bare project_name.git
 
-2. ½øÈë±¾µØÏîÄ¿£¬½«µ±Ç°ÏîÄ¿×ª»»³ÉgitÏî
+git init --shared=group --bare project_name.git
+
+2. è¿›å…¥æœ¬åœ°é¡¹ç›®ï¼Œå°†å½“å‰é¡¹ç›®è½¬æ¢æˆgité¡¹
 cd "C:\git\gdcs_v3" git init
 
-3. Îªµ±Ç°ÏîÄ¿Ìí¼ÓÔ¶³Ì²Ö¿âµØÖ·
-git remote add origin git@10.69.94.140:/home/git/repository/gdcs/gdcs_v3.git 
-git remote -v --²é¿´Ô¶³Ì²Ö¿â 
-git push --set-upstream origin master  -- ÉèÖÃÄ¬ÈÏµÄ·ÖÖ§ºÍÔ¶³Ì²Ö¿â
+3. ä¸ºå½“å‰é¡¹ç›®æ·»åŠ è¿œç¨‹ä»“åº“åœ°å€
+git remote add origin git@url/project_name.git
+git remote -v --æŸ¥çœ‹è¿œç¨‹ä»“åº“ 
+git push --set-upstream origin master  -- è®¾ç½®é»˜è®¤çš„åˆ†æ”¯å’Œè¿œç¨‹ä»“åº“
 
-4.Ìí¼Óµ±Ç°ÏîÄ¿´úÂë£¬²¢Ìá½»µ½Ô¶³Ì²Ö¿â
+4.æ·»åŠ å½“å‰é¡¹ç›®ä»£ç ï¼Œå¹¶æäº¤åˆ°è¿œç¨‹ä»“åº“
 git status 
 git add * 
 git commit -m "init version" 
 git push origin maste
 
-µØÖ·:git@10.69.94.140:/home/git/repository/gdcs/qtsb_wenzhou.git
-password:P@ssword4ioee 
+åœ°å€:git@url/project_name.git
+password:password
 
-Ç¿ÖÆÌá½»µ½Ô¶³Ì²Ö¿â(²»ÍÆ¼ö)
- git push -u origin master -f
+å¼ºåˆ¶æäº¤åˆ°è¿œç¨‹ä»“åº“(ä¸æ¨è)
+git push -u origin master -f
+
+å¼ºè¡Œåˆ é™¤é¡¹ç›®
+rm -rf file_name
+
