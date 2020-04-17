@@ -2,7 +2,7 @@
 1. 在远程仓库中创建仓库
 git init --bare project_name.git
 
-git init --shared=group --bare project_name.git
+git init --shared=group --bare project_name.git (注:此条命令创建的仓库 git组下的所有用户都可以执行文件)
 
 2. 进入本地项目，将当前项目转换成git项
 cd "C:\git\gdcs_v3" git init
