@@ -1,0 +1,16 @@
+1.登录到远程服务器
+ssh username@url (如:root@192.169.0.1)
+2.创建账号并分配到git组
+useradd -G git username
+passwd 123465  //设置密码123465
+
+其它指令
+1.查看用户组
+groups username
+2.判断用户是否已存在
+less /etc/passwd | grep username
+3.删除账号
+userdel username
+4.设置本地客户端的用户和邮箱
+git config –-global user.name "username"
+git config –-global user.email "dinglei@163.com"
